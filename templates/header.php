@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?= $baseUrl ?>/assets/css/style.css">
     <!-- Nav -->
     <link rel="stylesheet" href="<?= $baseUrl ?>/assets/css/nav.css">
+    <script src="<?= $baseUrl ?>/assets/js/nav.js"></script>
 </head>
 
 <body>
