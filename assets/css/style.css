@@ -1,3 +1,70 @@
+/* Main CSS */
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
 * {
+  box-sizing: border-box;
+}
+
+body {
   font-family: sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+dl,
+dd,
+ul,
+ol,
+fieldset,
+legend,
+textarea,
+pre,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #000;
+  --dark-grey: #323232;
+  --dark-grey-mid: #6d6b68;
+  --light-grey-mid: #8f8d8b;
+  --light-grey: #dad4ce;
+  --white: #fff;
+
+  --green: #31dd56;
+  --red: #dd3030;
+  --yellow: #d9df20;
+  --blue: #5242e8;
+}
+
+main {
+  height: 150vh;
+}
+
+.wrapper {
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
 }
