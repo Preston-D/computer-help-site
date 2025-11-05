@@ -1,0 +1,10 @@
+# Enable URL rewriting
+Options +FollowSymLinks
+RewriteEngine On
+
+# If the requested resource doesn't exist as a file or folder...
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# ...then rewrite the URL to point to the PHP file
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
