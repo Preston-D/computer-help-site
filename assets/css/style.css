@@ -83,12 +83,12 @@ main {
   background-image: url("../images/pexels-romanp-23383.jpg");
 }
 .parallax {
-  position: relative;
-  height: 100vh;
+  /* position: relative; */
+  height: 80vh;
+  background-attachment: fixed;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
+  background-size: cover;
 }
 @media only screen and (max-device-width: 1366px) {
   .parallax {
@@ -101,10 +101,6 @@ main {
   background-color: red;
   color: white;
   font-size: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .bg-container-medium {
@@ -116,12 +112,12 @@ main {
 }
 
 .parallax h1 {
-  font-size: 2.75em;
+  font-size: 3.75em;
 }
 .parallax p {
-  font-size: 1.125em;
+  font-size: 1.25em;
   line-height: 1.5em;
-  margin: 0 2em 0 2em;
+  margin: 0 4em 0 4em;
 }
 
 .parallax-container {
