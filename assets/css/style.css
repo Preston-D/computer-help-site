@@ -83,13 +83,12 @@ main {
   background-image: url("../images/pexels-romanp-23383.jpg");
 }
 .parallax {
-  height: 50%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 @media only screen and (max-device-width: 1366px) {
   .parallax {
@@ -97,17 +96,72 @@ main {
   }
 }
 
+.scroll-section {
+  height: 100vh;
+  background-color: red;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bg-container-medium {
+  width: 80%;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
 .parallax h1 {
-  background-color: #5242e8;
+  font-size: 2.75em;
+}
+.parallax p {
+  font-size: 1.125em;
+  line-height: 1.5em;
+  margin: 0 2em 0 2em;
 }
 
 .parallax-container {
-  height: 100%;
+  text-align: center;
+  color: white;
   display: flex;
-  margin-top: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 4em;
+}
+
+.blurred-background {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  mask: radial-gradient(#eeaeca 0%, #94bbe9 60%, transparent);
+  box-shadow: 0 0 3em 3em rgba(255, 255, 255, 0) inset;
+
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+  border-radius: 3em;
+}
+
+.bg-container-forground {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 2em;
-  text-align: center;
+  margin: 0 2em 0 2em;
+}
+
+.scroll-section,
+.parallax-container {
+  transition: transform 0.2s ease-out;
 }
