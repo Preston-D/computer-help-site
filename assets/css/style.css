@@ -84,7 +84,7 @@ main {
 }
 .parallax {
   /* position: relative; */
-  height: 80vh;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@ main {
 .blurred-background {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  mask: radial-gradient(#eeaeca 0%, #94bbe9 60%, transparent);
+  mask: radial-gradient(#eeaeca 0%, #94bbe9 50%, transparent);
   box-shadow: 0 0 3em 3em rgba(255, 255, 255, 0) inset;
 
   width: 100%;
