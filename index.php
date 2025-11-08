@@ -3,14 +3,30 @@ $pageTitle = "Home | My PHP Site";
 include 'templates/header.php';
 ?>
 <main>
-    <div class="wrapper">
-        <section class="about">
-            <h2>Welcome! about us.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus dolorum pariatur libero? Ducimus, quam similique. Placeat, ab. Fugiat sit iusto eius magni necessitatibus id ex. Animi facere recusandae deserunt!</p>
-        </section>
-        <h2>Welcome!</h2>
-        <p>This is the homepage of your PHP site. Edit freely in VS Code.</p>
-        <p>Server time: <?= date('Y-m-d H:i:s'); ?></p>
+    <div class="parallax image-1">
+        <div class="wrapper">
+            <div class="parallax-container" data-speed="0.5">
+                <h1>Helpful Computer Service in the Seattle Area</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis sequi, cum reiciendis debitis praesentium nesciunt exercitationem impedit tenetur consequuntur, amet aliquid et earum reprehenderit totam quod nam. Exercitationem, iste maxime?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-section" data-speed="1">
+        This div is just here to enable scrolling.
+    </div>
+
+    <div class="parallax image-2">
+        <div class="wrapper">
+            <div class="parallax-container" data-speed="0.5">
+                <h1>Second Parallax Section</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="scroll-section" data-speed="1.2">
+        This div is just here to enable scrolling.
     </div>
 
 </main>

@@ -23,6 +23,11 @@ body {
 }
 
 body,
+html {
+  height: 100%;
+}
+
+body,
 h1,
 h2,
 h3,
@@ -67,4 +72,42 @@ main {
   width: 82.5%;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
+}
+
+/* hero */
+.image-1 {
+  background-image: url("../images/pexels-zoedoingthings-944636.jpg");
+}
+.image-2 {
+  background-image: url("../images/pexels-romanp-23383.jpg");
+}
+.parallax {
+  height: 50%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.parallax h1 {
+  background-color: #5242e8;
+}
+
+.parallax-container {
+  height: 100%;
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  text-align: center;
 }
